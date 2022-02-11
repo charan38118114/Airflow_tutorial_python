@@ -3,7 +3,6 @@ from datetime import datetime
 from airflow.operators.python_operator import PythonOperator
 import io
 
-
 default_args={"owner":"airflow"}
 
 def test_function():
@@ -17,4 +16,3 @@ with DAG(dag_id="test_workflow",start_date=datetime(2022,2,7),schedule_interval=
         task_id="test_function",
         python_callable=test_function
     )
-

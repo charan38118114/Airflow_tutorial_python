@@ -1,0 +1,6 @@
+logs/*/*
+config/
+plugin/
+*.log
+logs/scheduler/latest
+logs/scheduler/latest
